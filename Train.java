@@ -1,15 +1,15 @@
 import java.util.*;
 
 public class Train {
-    private final Engine engine ;
+    static FuelType fuelType;
+    double fuelCapacity;
+    private final Engine engine = new Engine(fuelType, fuelCapacity, fuelCapacity);
     private ArrayList<Car> carsCurrentlyAttached;
     int nCars;
     int passengerCapacity;
-    FuelType f;
-    double fuelCapacity;
 
-    public Train(FuelType f, double fuelCapacity, int nCars, int passengerCapacity){
-        this.f = f;
+    public Train(FuelType fuelType, double fuelCapacity, int nCars, int passengerCapacity){
+        this.fuelType = fuelType;
         this.fuelCapacity = 30;
         this.nCars = nCars;
         this.passengerCapacity = passengerCapacity;
@@ -38,6 +38,15 @@ public class Train {
         else System.out.println("Passengers on board:" + this.carsCurrentlyAttached);
     }
 
-
+    public static void main(String[] args){
+        Engine engine = new Engine(fuelType, 100.0, 100.0);
+       try {
+           while (true) {
+               engine.go();
+           }
+       } catch (Exception e) {
+           System.err.println(e.getMessage()); // Out of fuel
+       }
+    }
     
 }

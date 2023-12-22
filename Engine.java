@@ -4,7 +4,7 @@ public class Engine {
     double maxFuelLevel;
 
     public Engine(FuelType f, double currentFuel, double maxFuelLevel){
-        this.f = FuelType;
+        this.f = f;
         this.currentFuel = currentFuel;
         this.maxFuelLevel = maxFuelLevel;
     }
@@ -20,15 +20,5 @@ public class Engine {
         refuel();
     }
 
-    public static void main(String[] args) {
-        Engine myEngine = new Engine(FuelType.ELECTRIC, 100.0);
-        try {
-            while (true) {
-                myEngine.go();
-            }
-        } catch (Exception e) {
-            System.err.println(e.getMessage()); // Out of fuel
-        }
-    }
 
 }

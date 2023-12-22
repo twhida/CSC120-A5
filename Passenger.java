@@ -1,6 +1,11 @@
 
 public class Passenger {
-
+    
+    /**
+     * method for board car
+     * @param c Car
+     * passenger added to (this) car if able, otherwise catch exception and print message
+     */
     public void boardCar(Car c){
     try {
          c.addPassenger(this);
@@ -9,6 +14,11 @@ public class Passenger {
     }
     }
 
+    /**
+     * method for get off car
+     * @param c Car
+     * passenger removed from (this) car if able, otherwise catch exception and print message
+     */
     public void getOffCar(Car c){
     try { 
         c.removePassenger(this);

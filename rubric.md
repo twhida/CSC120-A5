@@ -42,9 +42,9 @@ Listed below are various aspects of the assignment.  When you turn in your work,
 
 **YES** 4 pts: Programs compile without errors or warnings
 
-_____ 2 pts: Executes fully & consistently without crashing (exception/freeze)
+**PART** 2 pts: Executes fully & consistently without crashing (exception/freeze)
 
-_____ 2 pt: Complies with style guidelines (missing items 1 pt each):
+**YES** 2 pt: Complies with style guidelines (missing items 1 pt each):
 
       _____ Classes & class members all have Javadoc header comments
 
@@ -54,7 +54,7 @@ _____ 2 pt: Complies with style guidelines (missing items 1 pt each):
 
       **YES** Methods & variables all have clear and accurate names
 
-      _____ Methods avoid confusing side effects
+      **YES** Methods avoid confusing side effects
 
 **YES** 1 pt: All required files included with submission (including completed `rubric.md` file)
 
